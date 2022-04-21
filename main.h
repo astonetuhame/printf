@@ -3,13 +3,18 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * struct flags - struct containing flags to "turn on"
  * when a flag specifier is passed to _printf()
  * @plus: flag for the '+' character
+ * @q: the location and method to translate data to characters.
+ * @u: print function for specific type.
  * @space: flag for the ' ' character
  * @hash: flag for the '#' character
+ *
+ ** Return: int
  */
 typedef struct flags
 {
